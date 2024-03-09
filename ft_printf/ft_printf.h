@@ -21,8 +21,8 @@
 # include <stdint.h>
 
 int		ft_printf(const char *format, ...);
-int		ft_putchar(char c);
-int		ft_putstr(char *s);
+void	ft_putchar(char c);
+void	ft_putstr(char *s);
 void	ft_putnbr(int n);
 void	ft_putunsigned(unsigned int n);
 void	ft_printf_hex(long long n, char spec);

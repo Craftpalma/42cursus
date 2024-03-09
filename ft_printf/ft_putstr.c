@@ -6,7 +6,7 @@
 /*   By: ispalma- <ispalma-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 19:22:19 by ispalma-          #+#    #+#             */
-/*   Updated: 2024/03/08 16:43:18 by ispalma-         ###   ########.fr       */
+/*   Updated: 2024/03/09 11:17:17 by ispalma-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,9 @@ static int	ft_slen(const char *s)
 	return (len);
 }
 
-int	ft_putstr(char *s)
+void	ft_putstr(char *s)
 {
-	if (s == NULL)
-	{
-		ft_printf("(NULL)");
-		return (6);
-	}
+	if (!s)
+		return ;
 	write(1, s, ft_slen(s));
-	return (0);
 }
